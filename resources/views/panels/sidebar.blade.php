@@ -1,4 +1,3 @@
-{{-- vertical-menu --}}
 <div class="main-menu menu-fixed light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
@@ -16,32 +15,28 @@
                     </h2>
                 </a>
             </li>
-            <li class="nav-item nav-toggle">
+            <!-- <li class="nav-item nav-toggle">
                 <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
                     <i class="bx bx-x d-block d-xl-none font-medium-4 primary"></i>
                     <i class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block primary" data-ticon="bx-disc"></i>
                 </a>
-            </li>
+            </li> -->
         </ul>
     </div>
     <div class="shadow-bottom"></div>
     <div class="main-menu-content">
-
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
-            {{-- @if (!empty($menuData[0]) && isset($menuData[0]))
-                @foreach ($menuData[0]->menu as $menu)
-                    @if (isset($menu->navheader))
-                        <li class="navigation-header"><span>{{ $menu->navheader }}</span></li>
-                    @else --}}
-            <ul class="nav navbar-nav float-right">
-                <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link ajax"
-                        href="#" data-toggle="dropdown" style="padding-right:0px;">
-                        <div class="user-nav d-sm-flex d-none"></div><span><i class=""></i>x</span>
-                    </a>
-                    <div class="dropdown-menu pb-0">
-                        d
-                    </div>
-                </li>
-            </ul </ul>
+            
+            <li class=" nav-item">
+                <a class=" nav-link ajax" href="/admin" data-toggle="dropdown" style="padding-right:0px;">
+                    <div class="user-nav d-sm-flex d-none"></div>
+                    <span><i class=""></i>List Admin</span>
+                </a>
+                <a class=" nav-link ajax" href="/pegawai" data-toggle="dropdown" style="padding-right:0px;">
+                    <div class="user-nav d-sm-flex d-none"></div>
+                    <span><i class=""></i>List Pegawai</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>

@@ -59,3 +59,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+- lakukan ‘composer install’ di terminal
+- .env.example rename jadi .env
+- jalan ‘php artisan db:seed’ di terminal
+- lalu php artisan serve
+- jika error internal serve jalankan ‘php artisan key:generate’ di terminal
+- pakai akun seeder. (email: admin@admin.com pass:password123)
