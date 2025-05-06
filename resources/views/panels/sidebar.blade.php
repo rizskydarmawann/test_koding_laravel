@@ -26,32 +26,22 @@
     </div>
     <div class="shadow-bottom"></div>
     <div class="main-menu-content">
-        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"
-            data-icon-style="lines">
+
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
             {{-- @if (!empty($menuData[0]) && isset($menuData[0]))
                 @foreach ($menuData[0]->menu as $menu)
                     @if (isset($menu->navheader))
                         <li class="navigation-header"><span>{{ $menu->navheader }}</span></li>
                     @else --}}
-            <li class="nav-item">
-                <a href="/"{{-- @if (isset($menu->newTab)) {{ 'target=_blank' }} @endif --}}>
-                    {{-- @if (isset($menu->icon))
-                                    <i class="menu-livicon" data-icon="{{ $menu->icon }}"></i>
-                                @endif --}}
-                    {{-- @if (isset($menu->name)) --}}
-                    <span class="menu-title">List admin </span>
-                    {{-- @endif --}}
-                    {{-- @if (isset($menu->tag))
-                                    <span class="{{ $menu->tagcustom }}">{{ $menu->tag }}</span>
-                                @endif --}}
-                </a>
-                {{-- @if (isset($menu->submenu))
-                                @include('panels.sidebar-submenu', ['menu' => $menu->submenu])
-                            @endif --}}
-            </li>
-            {{-- @endif
-                @endforeach
-            @endif --}}
-        </ul>
+            <ul class="nav navbar-nav float-right">
+                <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link ajax"
+                        href="#" data-toggle="dropdown" style="padding-right:0px;">
+                        <div class="user-nav d-sm-flex d-none"></div><span><i class=""></i>x</span>
+                    </a>
+                    <div class="dropdown-menu pb-0">
+                        d
+                    </div>
+                </li>
+            </ul </ul>
     </div>
 </div>
